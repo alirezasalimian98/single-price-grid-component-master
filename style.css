@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla";
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 42rem;
+  width: 55rem;
+  background-color: #fff;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header-section {
+  grid-column: 1/-1;
+  padding: 3rem 2.5rem;
+}
+
+.primary-h {
+  color: hsl(179, 62%, 43%);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.secondary-h {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.header-text {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.price-section {
+  background-color: hsl(179, 62%, 43%);
+  padding: 3rem 2.5rem;
+  color: #fff;
+}
+
+.price-header {
+  font-size: 1.6rem;
+  word-spacing: 1.8px;
+  margin-bottom: 2rem;
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.big-price {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.price-time {
+  font-size: 1.5rem;
+  color: hsl(179, 62%, 70%);
+}
+
+.price-text {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn:active {
+  color: hsl(179, 50%, 50%);
+  background-color: hsl(204, 43%, 93%);
+}
+
+.info-section {
+  background-color: hsl(179, 50%, 50%);
+  padding: 3rem 2.5rem;
+  color: #fff;
+  padding-right: 7rem;
+}
+
+.info-header {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.info-text {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main {
+    padding: 4rem 1rem;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
